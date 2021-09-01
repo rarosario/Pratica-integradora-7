@@ -21,9 +21,11 @@ public class Vendedor extends Funcionarios {
 
     @Override
     public Double calculePlus() {
-        double valorTotal = 0d;
-        if (tempoDeCasa > 5 && comissao > 5000) {
+        Double valorTotal = 0d;
+        if (tempoDeCasa >= 5 && comissao > 5000) {
             valorTotal = salario + comissao + PLUS;
+        } else {
+            valorTotal = salario + comissao;
         }
         return valorTotal;
     }

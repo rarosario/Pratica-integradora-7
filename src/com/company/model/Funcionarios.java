@@ -16,6 +16,7 @@ public abstract class Funcionarios {
         this.plus = plus;
     }
 
+
     public abstract Double calculePlus();
 
 
